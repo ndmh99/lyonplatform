@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - LYON AI Housing Investment</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="./index.html"><img src="img/logo.png" alt="LYON AI Logo"></a>
+                <span>LYON AI Housing Investment</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../Website/index.html">Home</a></li>
+                    <li><a href="search.php">Search</a></li>
+                    <li><a href="../Website/property.html">Properties</a></li>
+                    <li><a href="../Website/profile.html" class="active">My Profile</a></li>
+                    <li><a href="logout.php">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-header">
+                <h1>My Profile</h1>
+            </div>
+            
+            <div class="profile-grid">
+                <div class="profile-sidebar">
+                    <div class="user-info">
+                        <div class="user-avatar">
+                            <img src="img/profile/avatar.png" alt="User Avatar" style="height: 200px; width: 200px;">
+                        </div>
+                        <h2 class="user-name">John Doe</h2>
+                        <p class="user-email">john.doe@example.com</p>
+                        <p class="user-joined">Member since: January 2025</p>
+                        <button class="btn btn-secondary">Edit Profile</button>
+                    </div>
+                    
+                    <div class="profile-nav">
+                        <ul>
+                            <li><a href="#saved-properties" class="active">Saved Properties</a></li>
+                            <li><a href="#search-history">Search History</a></li>
+                            <li><a href="#account-settings">Account Settings</a></li>
+                            <li><a href="#notifications">Notifications</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="profile-content">
+                    <div id="saved-properties" class="profile-tab active">
+                        <h3>Saved Properties</h3>
+                        <div class="properties-grid">
+                            <!-- This will be populated dynamically with PHP -->
+                            <?php include 'includes/saved_properties.php'; ?>
+                        </div>
+                    </div>
+                    
+                    <div id="search-history" class="profile-tab">
+                        <h3>Search History</h3>
+                        <table class="search-history-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Location</th>
+                                    <th>Filters</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- This will be populated dynamically with PHP -->
+                                <?php include 'includes/search_history.php'; ?>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div id="account-settings" class="profile-tab">
+                        <h3>Account Settings</h3>
+                        <form action="update_profile.php" method="post" class="profile-form">
+                            <div class="form-group">
+                                <label for="full_name">Full Name</label>
+                                <input type="text" id="full_name" name="full_name" value="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" value="john.doe@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone" value="(123) 456-7890">
+                            </div>
+                            <div class="form-group">
+                                

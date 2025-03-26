@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LYON AI Housing Investment</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="./index.html"><img src="img/logo.png" alt="LYON AI Logo"></a>
+                <span>LYON AI Housing Investment</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html" class="active">Home</a></li>
+                    <li><a href="search.php">Search</a></li>
+                    <li><a href="./property.html">Properties</a></li>
+                    <?php if(isset($_SESSION['user_id'])): ?>
+                        <li><a href="./profile.html">My Profile</a></li>
+                        <li><a href="logout.php">Logout</a></li>
+                    <?php else: ?>
+                        <li><a href="login.php">Login</a></li>
+                        <li><a href="register.php">Register</a></li>
+                    <?php endif; ?>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your Next Investment Property</h1>
+            <p>Use our AI-powered predictions to discover high-appreciation real estate opportunities</p>
+            <form action="search.php" method="get" class="search-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" name="location" placeholder="City, Neighborhood, or Postal Code">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn">Search Properties</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="properties container">
+        <div class="section-header">
+            <h2>Featured Properties</h2>
+            <p>Discover top investment opportunities selected by our AI</p>
+        </div>
+    </section>
+
+    <section class="features container">
+        <div class="section-header">
+            <h2>Why Choose LYON AI</h2>
+            <p>We leverage artificial intelligence to help you make smarter investment decisions</p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fa fa-chart-line"></i>
+                </div>
+                <h3>AI Price Predictions</h3>
+                <p>Our advanced algorithms analyze market trends to forecast property appreciation</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fa fa-map-marked-alt"></i>
+                </div>
+                <h3>Neighborhood Analysis</h3>
+                <p>Get detailed insights on neighborhood growth potential and investment viability</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fa fa-calculator"></i>
+                </div>
+                <h3>ROI Calculator</h3>
+                <p>Estimate your return on investment with our comprehensive financial tools</p>
+            </div>
+        </div>
+
+        <section class="properties">
+            <h2 class="section-header">Featured Properties</h2>
+            <div class="property-grid">
+                <div class="property-card">
+                    <img src="img/index/properties1.png" alt="Property 1">
+                    <div class="property-info">
+                        <div class="property-price">$450,000</div>
+                        <div class="property-address">123 Main Street, Anytown</div>
+                        <div class="property-stats">
+                            <span>3 Beds</span>
+                            <span>2 Baths</span>
+                            <span>1,850 sqft</span>
+                        </div>
+                        <div class="property-prediction">Predicted Appreciation: <strong>12.5%</strong></div>
+                        <a href="./property.html" class="view-btn">View Property</a>
+                    </div>
+                </div>
+                
+                <div class="property-card">
+                    <img src="img/index/properties2.png" alt="Property 2">
+                    <div class="property-info">
+                        <div class="property-price">$375,000</div>
+                        <div class="property-address">456 Oak Avenue, Somecity</div>
+                        <div class="property-stats">
+                            <span>2 Beds</span>
+                            <span>2 Baths</span>
+                            <span>1,500 sqft</span>
+                        </div>
+                        <div class="property-prediction">Predicted Appreciation: <strong>8.7%</strong></div>
+                        <a href="./property.html" class="view-btn">View Property</a>
+                    </div>
+                </div>
+                
+                <div class="property-card">
+                    <img src="img/index/properties3.png" alt="Property 3">
+                    <div class="property-info">
+                        <div class="property-price">$525,000</div>
+                        <div class="property-address">789 Pine Road, Othertown</div>
+                        <div class="property-stats">
+                            <span>4 Beds</span>
+                            <span>3 Baths</span>
+                            <span>2,200 sqft</span>
+                        </div>
+                        <div class="property-prediction">Predicted Appreciation: <strong>15.2%</strong></div>
+                        <a href="./property.html" class="view-btn">View Property</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- Elfsight AI Chatbot | Untitled AI Chatbot -->
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-eb7d48ec-0273-4a72-a909-af01552a25e8" data-elfsight-app-lazy></div>
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-section">
+                <h3>About LYON AI</h3>
+                <p>LYON AI Housing Investment uses cutting-edge artificial intelligence to help investors identify properties with high appreciation potential.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="search.php">Search Properties</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
+                    <li><a href="privacy.php">Privacy Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Investment Ave, Real Estate City</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>(123) 456-7890</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>info@lyonai.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <p>&copy; 2025 LYON AI Housing Investment. All rights reserved with Hieu Nguyen - Fei Yue - Yanfan Lin </p>
+        </div>
+    </footer>
+</body>
+</html>
