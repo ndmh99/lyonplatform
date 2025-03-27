@@ -1,4 +1,4 @@
-[https://www.the-bithub.com/lyonai](HTTPS://WWW.THE-BITHUB.COM/LYONAI)
+HTTPS://WWW.THE-BITHUB.COM/LYONAI
 
 ![Platform Preview](https://github.com/ndmh99/lyonplatform/blob/main/img/overview.gif)
 
