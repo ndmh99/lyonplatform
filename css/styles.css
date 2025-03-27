@@ -154,6 +154,7 @@ nav ul li a:hover {
     background: white;
     border-radius: 8px;
     overflow: hidden;
+    margin-bottom: 20px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
 }
@@ -264,7 +265,7 @@ nav ul li a:hover {
 
 /* Features Section */
 .features {
-    padding: 4rem 0;
+    padding: 4rem 0 0 0;
     background-color: #f9f9f9;
 }
 
@@ -310,7 +311,7 @@ nav ul li a:hover {
 footer {
     background-color: #333;
     color: white;
-    padding: 2rem 0 0.5rem;
+    padding: 2rem 0 0.5rem 2rem;
 }
 
 .footer-container {
@@ -569,7 +570,6 @@ footer {
 
     .property-grid {
         display: contents;
-        grid-template-columns: repeat(auto-fill, auto);
     }
 
     .container {

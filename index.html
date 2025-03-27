@@ -18,14 +18,14 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="./index.html" class="active">Home</a></li>
-                    <li><a href="search.php">Search</a></li>
+                    <li><a href="#">Search</a></li>
                     <li><a href="./property.html">Properties</a></li>
                     <?php if(isset($_SESSION['user_id'])): ?>
                         <li><a href="./profile.html">My Profile</a></li>
-                        <li><a href="logout.php">Logout</a></li>
+                        <li><a href="#">Logout</a></li>
                     <?php else: ?>
-                        <li><a href="login.php">Login</a></li>
-                        <li><a href="register.php">Register</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
                     <?php endif; ?>
                 </ul>
             </nav>
@@ -36,7 +36,7 @@
         <div class="hero-content">
             <h1>Find Your Next Investment Property</h1>
             <p>Use our AI-powered predictions to discover high-appreciation real estate opportunities</p>
-            <form action="search.php" method="get" class="search-form">
+            <form action="./property.html" method="get" class="search-form">
                 <div class="form-row">
                     <div class="form-group">
                         <input type="text" name="location" placeholder="City, Neighborhood, or Postal Code">
@@ -155,11 +155,11 @@
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul class="quick-links">
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="search.php">Search Properties</a></li>
-                    <li><a href="about.php">About Us</a></li>
-                    <li><a href="contact.php">Contact Us</a></li>
-                    <li><a href="privacy.php">Privacy Policy</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Search Properties</a></li>
+                    <li><a href="https://github.com/ndmh99/lyonplatform">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
                 </ul>
             </div>
             

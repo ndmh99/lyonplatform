@@ -18,14 +18,14 @@
             <nav class="main-nav">
                 <ul>
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="search.php">Search</a></li>
+                    <li><a href="#">Search</a></li>
                     <li><a href="./property.html" class="active">Properties</a></li>
                     <?php if(isset($_SESSION['user_id'])): ?>
                         <li><a href="./profile.html">My Profile</a></li>
-                        <li><a href="logout.php">Logout</a></li>
+                        <li><a href="#">Logout</a></li>
                     <?php else: ?>
-                        <li><a href="login.php">Login</a></li>
-                        <li><a href="register.php">Register</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
                     <?php endif; ?>
                 </ul>
             </nav>
@@ -104,7 +104,7 @@
                             <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
                             <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
                             {
-                            "height": "500",
+                            "height": "250",
                             "symbol": "AMEX:XLRE",
                             "interval": "D",
                             "timezone": "Etc/UTC",
@@ -236,7 +236,9 @@
             </div>
         </div>
     </section>
-
+    <!-- Elfsight AI Chatbot | Untitled AI Chatbot -->
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-eb7d48ec-0273-4a72-a909-af01552a25e8" data-elfsight-app-lazy></div>
     <footer>
         <div class="container footer-container">
             <div class="footer-section">
@@ -253,11 +255,11 @@
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <ul class="quick-links">
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="search.php">Search Properties</a></li>
-                    <li><a href="about.php">About Us</a></li>
-                    <li><a href="contact.php">Contact Us</a></li>
-                    <li><a href="privacy.php">Privacy Policy</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Search Properties</a></li>
+                    <li><a href="https://github.com/ndmh99/lyonplatform">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
                 </ul>
             </div>
             
