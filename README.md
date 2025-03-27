@@ -1,4 +1,5 @@
 https://www.the-bithub.com/lyonai
+![Platform Preview](https://github.com/ndmh99/lyonplatform/blob/main/img/logo.png)
 # lyonplatform
 AI HOUSING INVESTMENT PLATFORM
 
