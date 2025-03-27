@@ -9,13 +9,12 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
+    padding-top: 2%;
 }
 
 .container {
-    width: 90%;
-    margin: 0 auto 10px auto;
-    max-width: 1200px;
+    margin: 0 auto 10px 10px;
+
 }
 
 nav {
@@ -59,7 +58,7 @@ header {
 }
 
 .logo img {
-    height: 40px;
+    height: 65px;
     margin-right: 10px;
 }
 
@@ -182,6 +181,7 @@ nav ul li a:hover {
 
 .property-info {
     padding: 1.5rem;
+    margin-bottom: 20px;
 }
 
 .property-price {
@@ -270,9 +270,9 @@ nav ul li a:hover {
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, auto);
     gap: 2rem;
-    padding: 50px;
+    padding: 50px 200px 50px 200px;
 }
 
 .feature-card {
@@ -403,38 +403,6 @@ footer {
     border-top: 1px solid #444;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .header-container {
-        flex-direction: column;
-        padding: 1rem 0;
-    }
-    
-    nav ul {
-        margin-top: 1rem;
-    }
-    
-    .hero {
-        height: auto;
-        padding: 6rem 0 3rem;
-        margin-top: 100px;
-    }
-    
-    .hero h1 {
-        font-size: 2rem;
-    }
-    
-    
-    .form-row {
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
-    .form-group {
-        flex: 1 1 100%;
-    }
-}
-
 .properties {
     margin: 0 auto;
     width: 90%;
@@ -442,9 +410,11 @@ footer {
 
 .property-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    gap: 4rem;
 }
+
+
 
 .property-card {
     background: white;
@@ -457,10 +427,6 @@ footer {
     width: 100%;
     height: 180px;
     object-fit: cover;
-}
-
-.property-info {
-    padding: 1rem;
 }
 
 .property-price {
@@ -482,7 +448,7 @@ footer {
 }
 
 .profile-section {
-    margin: 10%;
+    margin: 8%;
 }
 
 .property-details {
@@ -527,8 +493,7 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
     gap: 10px; /* Spacing between images */
     padding: 20px;
-    margin: 0 auto;
-    max-width: 1000px; /* Limit gallery width */
+    margin: 20px 20px 20px 20px;
 }
 
 .property-gallery img {
@@ -543,3 +508,119 @@ footer {
 .property-gallery img:hover {
     transform: scale(1.35)
 }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        padding-bottom: 60px; /* Space for fixed bottom nav */
+        padding-top: 0;
+    }
+
+    header {
+        position: relative;;
+    }
+
+    .header-container {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    
+    nav ul {
+        margin-top: 1rem;
+    }
+    
+    .hero {
+        height: auto;
+        padding: 6rem 0 3rem;
+        margin: 0;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    
+    .form-row {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .form-group {
+        flex: 1 1 100%;
+    }
+
+    .features-grid {
+        display: contents;
+    }
+
+    .feature-card {
+        gap: 5rem;
+        margin: 10px;
+    }
+
+    .property-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+
+    .container {
+        margin: 0;
+    }
+/*-------------test------------------------*/
+    .main-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #4CAF50;
+        box-shadow: 0 -2px 8px rgba(0,0,0,0.15);
+        z-index: 100;
+    }
+
+    .main-nav ul {
+        height: 60px;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-nav ul li {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-nav ul li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        padding: 8px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-nav ul li a::before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 18px;
+        margin-bottom: 4px;
+    }
+
+    .main-nav ul li:nth-child(1) a::before { content: "\f015"; } /* home icon */
+    .main-nav ul li:nth-child(2) a::before { content: "\f002"; } /* search icon */
+    .main-nav ul li:nth-child(3) a::before { content: "\f1ad"; } /* building icon */
+    .main-nav ul li:nth-child(4) a::before { content: "\f007"; } /* user icon */
+    .main-nav ul li:nth-child(5) a::before { content: "\f00d"; } /* logout icon */
+    .main-nav ul li:nth-child(6) a::before { content: "\f058"; } /* login icon */
+    .main-nav ul li:nth-child(7) a::before { content: "\f044"; } /* logout icon */
+
+    .main-nav ul li a.active {
+        color: white;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+/*------------------------------------------------------------------------------------------------*/
