@@ -142,4 +142,4 @@ For support and queries:
 - Documentation: [Wiki](link-to-wiki)
 
 ---
-Made with ❤️ by Real Estate AI Team
+Made with ❤️ by Hieu
