@@ -7,7 +7,7 @@ AI HOUSING INVESTMENT PLATFORM
 A comprehensive web application that leverages artificial intelligence to predict real estate prices and provide market insights. This platform combines traditional real estate listing features with advanced AI capabilities to help users make informed property decisions.
 
 ![Platform Preview](https://github.com/ndmh99/lyonplatform/blob/main/img/mainpage%20sample.png)
-![Platform Preview](https://github.com/ndmh99/lyonplatform/blob/main/img/mainpage.gif)
+![Platform Preview](https://github.com/ndmh99/lyonplatform/blob/main/img/mainpage%20sample%202.png)
 ## 🌟 Features
 
 ### For Home Buyers & Investors
