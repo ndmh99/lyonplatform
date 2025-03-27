@@ -1,6 +1,7 @@
 ![Platform Preview](https://github.com/ndmh99/lyonplatform/blob/main/img/overview.gif)
 https://www.the-bithub.com/lyonai
 # lyonplatform
+![Platform Preview](https://github.com/ndmh99/lyonplatform/blob/main/img/small%20logo.png)
 AI HOUSING INVESTMENT PLATFORM
 
 # Real Estate AI Prediction Platform 🏠
