@@ -15,7 +15,7 @@
                 <a href="./index.html"><img src="img/logo.png" alt="LYON AI Logo"></a>
                 <span>LYON AI Housing Investment</span>
             </div>
-            <nav>
+            <nav class="main-nav">
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="search.php">Search</a></li>
@@ -46,17 +46,15 @@
             }
             ?> -->
             
-            <div class="property-gallery">
-                <!-- Images will be populated dynamically with PHP -->
-                <img src="./img/property/properties1.1.png" alt="Description of Image 1">
-                <img src="./img/property/properties1.2.png" alt="Description of Image 2">
-                <img src="./img/property/properties1.3.png" alt="Description of Image 3">
-
-            </div>
-            
             <div class="property-main">
                 <div class="property-info">
-                    <img src="./img/index/properties1.png" alt="Description of the image" style="height: 800px; width: 100%; border-radius: 10px; box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);"/>
+                    <img src="./img/index/properties1.png" alt="Description of the image" style="width: 100%; border-radius: 10px; box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);"/>
+                    <div class="property-gallery">
+                        <!-- Images will be populated dynamically with PHP -->
+                        <img src="./img/property/properties1.1.png" alt="Description of Image 1">
+                        <img src="./img/property/properties1.2.png" alt="Description of Image 2">
+                        <img src="./img/property/properties1.3.png" alt="Description of Image 3">
+                    </div>
                     <h1 class="property-title">123 Main Street, Example City</h1>
                     <div class="property-price">$450,000</div>
                     <div class="property-meta">
@@ -151,12 +149,7 @@
             <div class="property-location">
                 <h3>Location</h3>
                 <div id="map" style="width: 100%;">**MAP IMAGE GOES HERE**</div>
-                <gmp-map
-                    center="37.4220656,-122.0840897"
-                    zoom="10"
-                    map-id="DEMO_MAP_ID"
-                    style="height: 400px;">
-                </gmp-map>
+                <iframe style="width: 100%;" width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Robson%20Vancouver+(Vancouver%20Downtown)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> <a href='https://www.acadoo.de/leistungen/ghostwriter-doktorarbeit/'>Dissertation schreiben</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=98e3fe297073121f6b82b7883d4d8bf05f8d71cf'></script>
                 <script
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJsEerQ9PDBJWHwsJXXsderIgF1OHH2UA&loading=async&libraries=maps&v=beta" defer>
                 </script>
@@ -244,9 +237,7 @@
             </div>
         </div>
     </section>
-    <!-- Elfsight AI Chatbot | Untitled AI Chatbot -->
-    <script src="https://static.elfsight.com/platform/platform.js" async></script>
-    <div class="elfsight-app-eb7d48ec-0273-4a72-a909-af01552a25e8" data-elfsight-app-lazy></div>
+
     <footer>
         <div class="container footer-container">
             <div class="footer-section">
