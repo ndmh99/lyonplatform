@@ -1,8 +1,8 @@
-HTTPS://WWW.THE-BITHUB.COM/LYONAI
+DEMO WEBSITE >> HTTPS://WWW.THE-BITHUB.COM/LYONAI
 
 ![Platform Preview](https://github.com/ndmh99/lyonplatform/blob/main/img/overview.gif)
 
-[https://www.the-bithub.com/lyonai](HTTPS://WWW.THE-BITHUB.COM/LYONAI)
+DEMO WEBSITE >> [https://www.the-bithub.com/lyonai](HTTPS://WWW.THE-BITHUB.COM/LYONAI)
 # lyonplatform
 <img src="./img/logo.png" alt="drawing" width="270"/>
 AI HOUSING INVESTMENT PLATFORM
