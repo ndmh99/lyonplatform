@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Tahoma, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     padding-top: 2%;
@@ -410,7 +410,7 @@ footer {
 
 .property-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, auto);
     gap: 4rem;
 }
 
@@ -509,8 +509,17 @@ footer {
     transform: scale(1.35)
 }
 
+.ai-prediction {
+    font-family: 'Palatino Linotype', 'Book Antiqua', serif;
+    border: 0.5px solid rgb(227, 224, 224);
+    border-radius: 0px 30px 30px 30px;
+    padding: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+}
+
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1080px) {
     body {
         padding-bottom: 60px; /* Space for fixed bottom nav */
         padding-top: 0;
@@ -559,7 +568,8 @@ footer {
     }
 
     .property-grid {
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        display: contents;
+        grid-template-columns: repeat(auto-fill, auto);
     }
 
     .container {
