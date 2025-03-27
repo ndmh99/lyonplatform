@@ -98,7 +98,7 @@
                     <h3 style="color: #ffe600;background-color: #025c54;padding: 10px;border-radius: 5px;font-family: 'Baskerville'; font-size: 3rem; font-weight: bold;text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2), 2px 2px 10px rgba(255, 215, 0, 0.4);">AI Value Prediction</h3>
                     <div class="prediction-chart">
                         <!-- Chart will be rendered with JavaScript -->
-                        <div id="appreciationChart">**CHART GOES HERE**</div>
+                        <!-- <div id="appreciationChart">**CHART GOES HERE**</div> -->
                         <!-- TradingView Widget BEGIN -->
                         <div class="tradingview-widget-container" style="width:100%; margin: 20px 0 20px 0">
                             <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
@@ -117,27 +117,26 @@
                         </div>
   <!-- TradingView Widget END -->
                     </div>
-                    <div class="prediction-summary">
-                        <div class="summary-item">
-                            <div class="summary-label">Current Value</div>
-                            <div class="summary-value">$450,000</div>
+                    <div class="ai-prediction">
+                        <h2><i class="fa fa-assistive-listening-systems" aria-hidden="true"></i> AI thinks that:</h2>
+                        <div class="prediction-summary" style="font-family: 'Courier New', monospace;">
+                            <div class="summary-item">
+                                <div class="summary-label">Current Value: $450,000</div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-label">1-Year Prediction: $472,500 (+5%)</div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-label">3-Year Prediction: $540,000 (+20%)</div>
+                            </div>
+                            <div class="summary-item">
+                                <div class="summary-label">5-Year Prediction: $630,000 (+40%)</div>
+                            </div>
                         </div>
-                        <div class="summary-item">
-                            <div class="summary-label">1-Year Prediction</div>
-                            <div class="summary-value prediction-up">$472,500 (+5%)</div>
+                        <div class="prediction-analysis">
+                            <h4>Investment Analysis</h4>
+                            <p>This property is predicted to appreciate at a rate of 5% annually, which is 2% higher than the neighborhood average. The strong growth is supported by improving school ratings, decreasing crime rates, and planned commercial development in the area.</p>
                         </div>
-                        <div class="summary-item">
-                            <div class="summary-label">3-Year Prediction</div>
-                            <div class="summary-value prediction-up">$540,000 (+20%)</div>
-                        </div>
-                        <div class="summary-item">
-                            <div class="summary-label">5-Year Prediction</div>
-                            <div class="summary-value prediction-up">$630,000 (+40%)</div>
-                        </div>
-                    </div>
-                    <div class="prediction-analysis">
-                        <h4>Investment Analysis</h4>
-                        <p>This property is predicted to appreciate at a rate of 5% annually, which is 2% higher than the neighborhood average. The strong growth is supported by improving school ratings, decreasing crime rates, and planned commercial development in the area.</p>
                     </div>
                     <div class="prediction-actions">
                         <button class="btn btn-primary save-property">Save Property</button>
@@ -156,7 +155,7 @@
                 
                 <div class="neighborhood-stats">
                     <h4>Neighborhood Statistics</h4>
-                    <div class="rating" style="font-size: 24px;color: rgb(255, 217, 0);border: 5px solid #040633;border-radius: 15px;background-color: #080937;width: 110px;margin:5px;">
+                    <div class="rating" style="font-size: 24px;color: #daff07;border: 5px solid #040633;border-radius: 15px;background-color: #080937;width: 110px;margin:5px;text-align:center;">
                         ★☆☆☆☆
                     </div>                    
                     <div class="stats-grid">
