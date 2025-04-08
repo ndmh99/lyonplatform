@@ -143,4 +143,4 @@ For support and queries:
 - Documentation: [Wiki](link-to-wiki)
 
 ---
-Made with ❤️ by Hieu
+Made with ❤️ by NDMH
