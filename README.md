@@ -13,7 +13,7 @@ A comprehensive web application that leverages artificial intelligence to predic
 
 ![Platform Preview](https://github.com/ndmh99/lyonplatform/blob/main/img/mainpage%20sample.png)
 ![Platform Preview](https://github.com/ndmh99/lyonplatform/blob/main/img/mainpage%20sample%202.png)
-![Platform Preview](https://github.com/ndmh99/lyonplatform/blob/main/markmap.svg)
+![Platform Preview](https://raw.githubusercontent.com/ndmh99/lyonplatform/9e949001f773c29b94358f4db13afb4d4dc76660/markmap.svg)
 ## 🌟 Features
 
 ### For Home Buyers & Investors
